@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews | Shree Balaji Mobile Mart</title>
+    <meta name="description" content="See what our satisfied customers have to say about our products and services.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- SEO Schema Markup for Reviews -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Shree Balaji Mobile Mart",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "124"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-mobile-screen-button"></i> Shree Balaji <span>Mobile Mart</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews section-padding page-top-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Customer Reviews</h2>
+                <p>See what our satisfied customers have to say about our products and services.</p>
+            </div>
+            
+            <!-- Review Summary (Google Style) -->
+            <div class="review-summary-container">
+                <div class="review-summary-left">
+                    <h1 class="rating-number">4.9</h1>
+                    <div class="rating-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="rating-count">124 reviews</p>
+                </div>
+                <div class="review-summary-right">
+                    <div class="rating-bar-row">
+                        <span class="rating-label">5</span>
+                        <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="rating-label">4</span>
+                        <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 8%;"></div></div>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="rating-label">3</span>
+                        <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 2%;"></div></div>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="rating-label">2</span>
+                        <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                    </div>
+                    <div class="rating-bar-row">
+                        <span class="rating-label">1</span>
+                        <div class="rating-bar-bg"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Toggle -->
+            <div class="reviews-tabs" style="display: flex; justify-content: center; margin-bottom: 40px;">
+                <div class="toggle-switch" style="position: relative; display: flex; background: rgba(0, 0, 0, 0.5); border-radius: 30px; padding: 5px; border: 1px solid rgba(255, 255, 255, 0.2);">
+                    <div id="toggleIndicator" style="position: absolute; top: 5px; left: 5px; bottom: 5px; width: 170px; background: var(--secondary-color); border-radius: 25px; transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); z-index: 0;"></div>
+                    <button id="btnReadReviews" style="position: relative; z-index: 1; border: none; background: transparent; padding: 12px 25px; color: var(--dark-bg); font-weight: 600; font-size: 1rem; font-family: inherit; border-radius: 25px; cursor: pointer; transition: color 0.3s ease; width: 170px;">Customer Reviews</button>
+                    <button id="btnWriteReview" style="position: relative; z-index: 1; border: none; background: transparent; padding: 12px 25px; color: var(--white); font-weight: 600; font-size: 1rem; font-family: inherit; border-radius: 25px; cursor: pointer; transition: color 0.3s ease; width: 170px;">Write a Review</button>
+                </div>
+            </div>
+
+            <!-- Read Reviews Tab -->
+            <div id="readReviewsTab" class="tab-pane active" style="display: block; animation: fadeIn 0.3s ease-in;">
+                <div class="reviews-grid" id="reviewsGrid">
+                    <!-- Review 1 -->
+                    <div class="review-card" data-rating="5">
+                        <div class="reviewer" style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div class="avatar" style="background-color: #E65100; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">C</div>
+                                <div class="reviewer-info">
+                                    <h4 style="margin: 0; font-size: 1rem; color: #202124;">Chintala Greeshma</h4>
+                                    <span style="font-size: 0.85rem; color: #70757a;">1 review</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #5f6368; cursor: pointer; padding: 5px;"></i>
+                        </div>
+                        <div class="stars" style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <div style="margin-right: 8px; font-size: 0.9rem; color: #fbbc04;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: #70757a;">a year ago</span>
+                        </div>
+                        <p class="review-text" style="margin-bottom: 15px; color: #3c4043; font-size: 0.95rem; line-height: 1.5;">Super service!</p>
+                        
+                        <!-- Owner Response -->
+                        <div class="owner-response">
+                            <h5><i class="fa-solid fa-reply"></i> Response from the owner</h5>
+                            <p>Thank you so much for your kind words! We are thrilled to hear you enjoyed our service. Looking forward to serving you again!</p>
+                        </div>
+
+                        <div class="review-actions-bottom" style="display: flex; gap: 20px;">
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-regular fa-thumbs-up"></i> Helpful</button>
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    <div class="review-card" data-rating="5">
+                        <div class="reviewer" style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div class="avatar" style="background-color: #9c27b0; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 1.2rem;">V</div>
+                                <div class="reviewer-info">
+                                    <h4 style="margin: 0; font-size: 1rem; color: #202124;">Venkatesh Babu</h4>
+                                    <span style="font-size: 0.85rem; color: #70757a;">Local Guide <i class="fa-solid fa-certificate" style="color: #ff9800; font-size: 0.8rem;"></i> 12 reviews</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #5f6368; cursor: pointer; padding: 5px;"></i>
+                        </div>
+                        <div class="stars" style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <div style="margin-right: 8px; font-size: 0.9rem; color: #fbbc04;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: #70757a;">2 months ago</span>
+                        </div>
+                        <p class="review-text" style="margin-bottom: 15px; color: #3c4043; font-size: 0.95rem; line-height: 1.5;">Very reasonable prices for mobile repair. I changed my display here and it is working perfectly like original. Thank you.</p>
+                        
+                        <!-- Review Images -->
+                        <div class="review-images-grid">
+                            <img src="images/shop-inside.jpg.png" alt="Customer Photo">
+                            <img src="images/shop-front.jpg.png" alt="Customer Photo">
+                        </div>
+
+                        <!-- Owner Response -->
+                        <div class="owner-response">
+                            <h5><i class="fa-solid fa-reply"></i> Response from the owner</h5>
+                            <p>Hi Venkatesh, thank you for trusting us with your device! We always strive to provide the best quality parts at genuine prices. See you next time!</p>
+                        </div>
+
+                        <div class="review-actions-bottom" style="display: flex; gap: 20px;">
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-regular fa-thumbs-up"></i> Helpful</button>
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>
+                    </div>
+
+                    <!-- Review 3 -->
+                    <div class="review-card" data-rating="5">
+                        <div class="reviewer" style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div class="avatar" style="background-image: url('https://ui-avatars.com/api/?name=Saniya+Thahseen&background=1a237e&color=fff'); width: 40px; height: 40px; border-radius: 50%; background-size: cover;"></div>
+                                <div class="reviewer-info">
+                                    <h4 style="margin: 0; font-size: 1rem; color: #202124;">Saniya Thahseen</h4>
+                                    <span style="font-size: 0.85rem; color: #70757a;">1 review</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #5f6368; cursor: pointer; padding: 5px;"></i>
+                        </div>
+                        <div class="stars" style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <div style="margin-right: 8px; font-size: 0.9rem; color: #fbbc04;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: #70757a;">a year ago</span>
+                        </div>
+                        <p class="review-text" style="margin-bottom: 15px; color: #3c4043; font-size: 0.95rem; line-height: 1.5;">Great experience</p>
+                        <div class="review-actions-bottom" style="display: flex; gap: 20px;">
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-regular fa-thumbs-up"></i> Helpful</button>
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>
+                    </div>
+
+                    <!-- Review 4 -->
+                    <div class="review-card" data-rating="4">
+                        <div class="reviewer" style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: flex-start;">
+                            <div style="display: flex; gap: 12px; align-items: center;">
+                                <div class="avatar" style="background-image: url('https://ui-avatars.com/api/?name=Medamaina+Charmika&background=00bcd4&color=fff'); width: 40px; height: 40px; border-radius: 50%; background-size: cover;"></div>
+                                <div class="reviewer-info">
+                                    <h4 style="margin: 0; font-size: 1rem; color: #202124;">Medamaina Charmika</h4>
+                                    <span style="font-size: 0.85rem; color: #70757a;">1 review</span>
+                                </div>
+                            </div>
+                            <i class="fa-solid fa-ellipsis-vertical" style="color: #5f6368; cursor: pointer; padding: 5px;"></i>
+                        </div>
+                        <div class="stars" style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <div style="margin-right: 8px; font-size: 0.9rem; color: #fbbc04;">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            </div>
+                            <span style="font-size: 0.85rem; color: #70757a;">a year ago</span>
+                        </div>
+                        <p class="review-text" style="margin-bottom: 15px; color: #3c4043; font-size: 0.95rem; line-height: 1.5;">Very good 👍 Bought a tempered glass and back cover, nice quality.</p>
+                        <div class="review-actions-bottom" style="display: flex; gap: 20px;">
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-regular fa-thumbs-up"></i> Helpful</button>
+                            <button style="background: none; border: 1px solid #dadce0; border-radius: 16px; padding: 5px 12px; color: #3c4043; font-size: 0.85rem; font-weight: 500; display: flex; align-items: center; gap: 6px; cursor: pointer;"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Write Review Tab -->
+            <div id="writeReviewTab" class="tab-pane" style="display: none; animation: fadeIn 0.3s ease-in;">
+                <div class="review-form-container" style="margin-top: 0;">
+                    <h3 style="margin-bottom: 20px;">Write a Review</h3>
+                    <form id="reviewForm">
+                        <div class="form-group">
+                            <label for="reviewerName">Your Name</label>
+                            <input type="text" id="reviewerName" required placeholder="Enter your name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
+                        </div>
+                        <div class="form-group" style="margin-top: 15px;">
+                            <label for="reviewRating">Rating</label>
+                            <select id="reviewRating" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px;">
+                                <option value="5">⭐⭐⭐⭐⭐ (5 Stars)</option>
+                                <option value="4">⭐⭐⭐⭐ (4 Stars)</option>
+                                <option value="3">⭐⭐⭐ (3 Stars)</option>
+                                <option value="2">⭐⭐ (2 Stars)</option>
+                                <option value="1">⭐ (1 Star)</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-top: 15px;">
+                            <label for="reviewText">Your Review</label>
+                            <textarea id="reviewText" rows="4" required placeholder="Tell us about your experience..." style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; margin-top: 5px; resize: vertical;"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo mb-3 d-block" style="color: white;">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Shree Balaji <span>Mobile Mart</span>
+                    </a>
+                    <p>Your ultimate destination for quality mobile phones, premium accessories, and expert repair services.</p>
+                    <div class="footer-socials" style="margin-top: 20px;">
+                        <a href="https://instagram.com/shreebalajimobiles7" target="_blank" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/916305890106" target="_blank" style="color: white; font-size: 1.5rem; margin-right: 15px;"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+916305890106" style="color: white; font-size: 1.5rem;"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Top Services</h3>
+                    <ul>
+                        <li>Display Replacement</li>
+                        <li>Battery Replacement</li>
+                        <li>Mobile Accessories</li>
+                        <li>Second-Hand Mobiles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shree Balaji Mobile Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Update review summary dynamically
+        function updateReviewSummary() {
+            const reviewCards = document.querySelectorAll('#reviewsGrid .review-card');
+            const totalReviews = reviewCards.length;
+            
+            if (totalReviews === 0) return;
+
+            let totalRating = 0;
+            const ratingCounts = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
+
+            reviewCards.forEach(card => {
+                const rating = parseInt(card.dataset.rating || 5);
+                totalRating += rating;
+                if(ratingCounts[rating] !== undefined) {
+                    ratingCounts[rating]++;
+                }
+            });
+
+            const avgRating = (totalRating / totalReviews).toFixed(1);
+
+            // Update rating number & count
+            document.querySelector('.rating-number').textContent = avgRating;
+            document.querySelector('.rating-count').textContent = totalReviews + ' reviews';
+
+            // Update stars
+            const starsContainer = document.querySelector('.rating-stars');
+            if (starsContainer) {
+                let starsHtml = '';
+                const fullStars = Math.floor(avgRating);
+                const hasHalfStar = (avgRating - fullStars) >= 0.5;
+                
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= fullStars) {
+                        starsHtml += '<i class="fa-solid fa-star"></i>';
+                    } else if (i === fullStars + 1 && hasHalfStar) {
+                        starsHtml += '<i class="fa-solid fa-star-half-stroke"></i>';
+                    } else {
+                        starsHtml += '<i class="fa-regular fa-star" style="color: rgba(255,255,255,0.3);"></i>';
+                    }
+                }
+                starsContainer.innerHTML = starsHtml;
+            }
+
+            // Update progress bars
+            const rows = document.querySelectorAll('.rating-bar-row');
+            rows.forEach(row => {
+                const label = parseInt(row.querySelector('.rating-label').textContent);
+                const fill = row.querySelector('.rating-bar-fill');
+                if (fill && ratingCounts[label] !== undefined) {
+                    const percentage = (ratingCounts[label] / totalReviews) * 100;
+                    fill.style.width = percentage + '%';
+                }
+            });
+        }
+
+        // Run on load
+        document.addEventListener('DOMContentLoaded', updateReviewSummary);
+
+        // Form submission alert (since modal is gone)
+        document.getElementById('reviewForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your review! It has been submitted for approval.');
+            this.reset();
+            // Switch back to read reviews tab
+            document.getElementById('btnReadReviews').click();
+        });
+    </script>
+</body>
+</html>

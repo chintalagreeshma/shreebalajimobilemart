@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Shree Balaji Mobile Mart</title>
+    <meta name="description"
+        content="Explore our wide range of professional mobile services and premium quality accessories.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-mobile-screen-button"></i> Shree Balaji <span>Mobile Mart</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding page-top-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">Our Services & Products</span>
+                <h2>What We Offer</h2>
+                <p>Explore our wide range of professional mobile services and premium quality accessories.</p>
+            </div>
+
+            <div class="filter-container text-center">
+                <button class="filter-btn active" onclick="filterServices('all', this)">All Items</button>
+                <button class="filter-btn" onclick="filterServices('repairs', this)">Our Repair Services</button>
+                <button class="filter-btn" onclick="filterServices('products', this)">Premium Accessories & Phones</button>
+            </div>
+
+            <!-- Repairs Section -->
+            <div class="services-category" id="repairs-section">
+                <h3 class="category-title">Our Repair Services</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://thumbs.dreamstime.com/b/group-spare-smartphone-batteries-isolated-white-background-d-illustration-151053166.jpg" class="service-card-img" alt="Smartphone Batteries">
+                        <div class="service-card-content">
+                            <h3>Smartphone Batteries</h3>
+                            <p>Original smartphone batteries for long-lasting performance.</p>
+                            <a href="contact.html" class="btn-card">Enquire / Book Repair</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://cdn.prod.website-files.com/60ce1b7dd21cd5b42639ff42/61b11557deff6200da612262_iStock-1094496306.jpg" class="service-card-img" alt="Battery Replacement">
+                        <div class="service-card-content">
+                            <h3>Battery Replacement</h3>
+                            <p>Quick and safe battery replacement services.</p>
+                            <a href="contact.html" class="btn-card">Enquire / Book Repair</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://guide-images.cdn.ifixit.com/igi/SSSHufTqlhuQIpYZ.full" class="service-card-img" alt="Display Replacement">
+                        <div class="service-card-content">
+                            <h3>Display Replacement</h3>
+                            <p>Professional smartphone display replacements.</p>
+                            <a href="contact.html" class="btn-card">Enquire / Book Repair</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://content.jdmagicbox.com/v2/comp/chennai/w5/044pxx44.xx44.150423104405.k6w5/catalogue/xpress-way-mobiles-poonamallee-chennai-mobile-phone-repair-and-services-apple-ryojj6zsaq-250.jpg" class="service-card-img" alt="All Display Repairs">
+                        <div class="service-card-content">
+                            <h3>All Display Repairs</h3>
+                            <p>Comprehensive repair services for all types of screens.</p>
+                            <a href="contact.html" class="btn-card">Enquire / Book Repair</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://www.mobileserviceacademy.com/wp-content/uploads/2020/11/All-in-One-Mobile-Repairing-Tools-for-Beginners-2.jpg" class="service-card-img" alt="Repairing Tools">
+                        <div class="service-card-content">
+                            <h3>Repairing Tools</h3>
+                            <p>Professional mobile repairing tools and kits.</p>
+                            <a href="contact.html" class="btn-card">Enquire / Book Repair</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Section -->
+            <div class="services-category mt-5" id="products-section">
+                <h3 class="category-title">Premium Accessories & Phones</h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/332326546/BK/EL/PP/115467798/all-brands-mobile-phones.jpg" class="service-card-img" alt="All Mobile Brands">
+                        <div class="service-card-content">
+                            <h3>All Mobile Brands</h3>
+                            <p>A wide selection of smartphones from top global brands.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card position-relative">
+                        <span class="card-badge">Certified Pre-Owned</span>
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2024/9/454016057/GT/ZZ/AP/108381432/wholesale-second-hand-mobile-phones.jpg" class="service-card-img" alt="Second-Hand Mobiles">
+                        <div class="service-card-content">
+                            <h3>Second-Hand Mobiles</h3>
+                            <p>Certified, high-quality pre-owned smartphones.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://images.ctfassets.net/wcfotm6rrl7u/7aMGEMSOIq8H2prd7LtAVB/4678523e252da78caf45c6508debf99f/HMD_Feature_phones-Catalogue-OG_Image.jpg" class="service-card-img" alt="Keypad Mobiles">
+                        <div class="service-card-content">
+                            <h3>Keypad Mobiles</h3>
+                            <p>Durable and reliable classic keypad mobile phones.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://istarmax.com/wp-content/uploads/2024/02/2024-FEB-PRODUCT-RANGE-1-1024x499.webp" class="service-card-img" alt="Smart Watches">
+                        <div class="service-card-content">
+                            <h3>Smart Watches</h3>
+                            <p>Premium feature-rich smartwatches for all brands.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://m.media-amazon.com/images/I/61e4Ec6tpiL.jpg" class="service-card-img" alt="Wireless Charging">
+                        <div class="service-card-content">
+                            <h3>Wireless Charging</h3>
+                            <p>Modern wireless charging pads and accessories.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://gentooshop.com/media/catalog/product/cache/c7b617031b10a4a098f2de71aa854351/o/g/og2098.jpg" class="service-card-img" alt="Bluetooth Devices">
+                        <div class="service-card-content">
+                            <h3>Bluetooth Devices</h3>
+                            <p>High-quality bluetooth connections and speakers.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://tiimg.tistatic.com/fp/1/007/870/fast-charging-speed-heat-resistant-black-micro-usb-mobile-phone-charger-411.jpg" class="service-card-img" alt="Mobile Chargers">
+                        <div class="service-card-content">
+                            <h3>Mobile Chargers</h3>
+                            <p>Reliable chargers for all types of mobile devices.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://4.imimg.com/data4/MA/YK/MY-11930685/usb-phone-charger-cable.jpg" class="service-card-img" alt="Data Cables">
+                        <div class="service-card-content">
+                            <h3>Data Cables</h3>
+                            <p>Durable data cables for fast charging and syncing.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://m.media-amazon.com/images/I/51tg3d0aHPL.jpg" class="service-card-img" alt="Earphones">
+                        <div class="service-card-content">
+                            <h3>Earphones</h3>
+                            <p>Wired and wireless earphones for premium audio quality.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://img.diylooks.com/upload/store/product_l/EDA008078601A.jpg" class="service-card-img" alt="Neckbands">
+                        <div class="service-card-content">
+                            <h3>Neckbands</h3>
+                            <p>Comfortable neckbands for active lifestyles.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://stayclassy.in/wp-content/uploads/2025/04/0000_8.jpg" class="service-card-img" alt="Back Covers">
+                        <div class="service-card-content">
+                            <h3>Back Covers</h3>
+                            <p>Stylish and protective back covers for all models.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://mobilezon.in/wp-content/uploads/2023/07/iphone-13-pro-transparent-tempered-glass.jpg" class="service-card-img" alt="Tempered Glass">
+                        <div class="service-card-content">
+                            <h3>Tempered Glass</h3>
+                            <p>Expert installation of high-quality tempered glass.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://rukmini1.flixcart.com/image/1500/1500/xif0q/cable-drop-clip/l/n/a/8-spiral-cable-protector-winder-sleeve-protecting-expensive-8-original-imah3kafgenrn7ux.jpeg" class="service-card-img" alt="Cable Protectors">
+                        <div class="service-card-content">
+                            <h3>Cable Protectors</h3>
+                            <p>Accessories to extend the life of your cables.</p>
+                            <a href="contact.html" class="btn-card">Check Availability</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-services text-center mt-4">
+                <div class="service-banner">
+                    <i class="fa-solid fa-wrench"></i>
+                    <h3>Complete Mobile Solutions</h3>
+                    <p>From premium mobile accessories and smartwatches to professional display and battery replacements, we provide everything you need to keep your devices in perfect condition.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo mb-3 d-block" style="color: white;">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Shree Balaji <span>Mobile Mart</span>
+                    </a>
+                    <p>Your ultimate destination for quality mobile phones, premium accessories, and expert repair
+                        services.</p>
+                    <div class="footer-socials" style="margin-top: 20px;">
+                        <a href="https://instagram.com/shreebalajimobiles7" target="_blank"
+                            style="color: white; font-size: 1.5rem; margin-right: 15px;"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/916305890106" target="_blank"
+                            style="color: white; font-size: 1.5rem; margin-right: 15px;"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+916305890106" style="color: white; font-size: 1.5rem;"><i
+                                class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Top Services</h3>
+                    <ul>
+                        <li>Display Replacement</li>
+                        <li>Battery Replacement</li>
+                        <li>Mobile Accessories</li>
+                        <li>Second-Hand Mobiles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shree Balaji Mobile Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterServices(category, btn) {
+            // Update active button
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Toggle sections
+            const repairs = document.getElementById('repairs-section');
+            const products = document.getElementById('products-section');
+
+            if (category === 'all') {
+                repairs.style.display = 'block';
+                products.style.display = 'block';
+            } else if (category === 'repairs') {
+                repairs.style.display = 'block';
+                products.style.display = 'none';
+            } else {
+                repairs.style.display = 'none';
+                products.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>
