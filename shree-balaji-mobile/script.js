@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
         if (navLinks.classList.contains('active')) {
             hamburger.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         } else {
@@ -34,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.nav-links li a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
             hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
         });
     });

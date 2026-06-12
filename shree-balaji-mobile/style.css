@@ -214,10 +214,17 @@ h1, h2, h3, h4 {
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    transition: var(--transition);
 }
 
 .navbar.scrolled .hamburger {
     color: var(--dark-bg);
+}
+
+.hamburger.active {
+    color: var(--dark-bg) !important;
 }
 
 /* Hero Section */
@@ -1023,6 +1030,7 @@ h1, h2, h3, h4 {
 
 @media (max-width: 768px) {
     .hamburger { display: block; }
+    
     .nav-links {
         position: fixed;
         top: 0;
@@ -1034,10 +1042,20 @@ h1, h2, h3, h4 {
         padding: 80px 30px;
         box-shadow: -5px 0 15px rgba(0,0,0,0.1);
         transition: var(--transition);
+        gap: 30px;
+        justify-content: flex-start;
     }
+    
     .nav-links.active { right: 0; }
-    .nav-links li a { color: var(--dark-bg); font-size: 1.1rem; }
-    .nav-links li a:hover, .nav-links li a.active { color: var(--primary-color); }
+    
+    .nav-links li a { 
+        font-size: 1.1rem; 
+        color: var(--dark-bg);
+    }
+
+    .nav-links li a:hover, .nav-links li a.active {
+        color: var(--primary-color);
+    }
     
     .hero-content h1 { font-size: 2.5rem; }
     .section-header h2 { font-size: 2rem; }
